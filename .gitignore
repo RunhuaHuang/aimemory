@@ -1,0 +1,23 @@
+# Data-only public release: ignore everything by default.
+# Analysis code, figures, manuscript, and submission materials stay private.
+*
+
+# Keep git control and repo metadata files.
+!.gitignore
+!README.md
+!LICENSE
+!CITATION.cff
+
+# Keep the de-identified study data and data dictionary.
+!data/
+!data/**
+
+# Keep the de-identified MBF validation dataset (data only, no scripts/results).
+!validation/
+validation/*
+!validation/mbf_validation_data.csv
+
+# OS / Python / LaTeX junk, in case those appear inside kept folders.
+.DS_Store
+__pycache__/
+*.pyc
